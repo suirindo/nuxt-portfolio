@@ -2,7 +2,7 @@
 id:"6"
 title:"6つ目の記事"
 date:"2022-08-17"
-image:""
+image:"/assets/images/pic6.jpg"
 excerpt:""
 ---
 

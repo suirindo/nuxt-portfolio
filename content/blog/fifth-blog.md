@@ -2,7 +2,7 @@
 id:"5"
 title:"5つ目の記事"
 date:"2022-08-17"
-image:""
+image:"/assets/images/pic5.jpg"
 excerpt:""
 ---
 
