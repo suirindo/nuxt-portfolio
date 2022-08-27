@@ -5,7 +5,6 @@ export default defineNuxtConfig({
     modules: [
         "@nuxt/content",
     ],
-
     css: [
         "~/assets/styles/common.css",
         "~/assets/styles/layout.css",
@@ -14,6 +13,4 @@ export default defineNuxtConfig({
         "~/assets/styles/contact.css",
         "~/assets/styles/singleblog.css",
     ]
-
 })
-
