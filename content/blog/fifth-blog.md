@@ -2,7 +2,7 @@
 id: "5"
 title: "5つ目の記事"
 date: "2015-03-05"
-image: "/assets/images/pic5.jpg"
+image: "/pic5.jpg"
 excerpt: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
 ---
 
