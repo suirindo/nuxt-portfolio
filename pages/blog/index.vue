@@ -1,32 +1,25 @@
 <template>
-    <div>
-        <div class="hero">
-            <img src="~/assets/images/index-hero.jpg" alt="hero">
-            <div class="textContainer">
-                <h1>I'm Abe Hiroki!</h1>
-                <h3>JavaScript Developer</h3>
-            </div>
-        </div>
+    <div class="wrapper">
         <div class="container">
-            <div class="profile">
-                <div>
-                    <h2>JavaScript Nerd</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                </div>
-                <img src="~/assets/images/profile.jpg" alt="profile">
+        <h1>Blog</h1>
+        <p>エンジニアの日常生活をお届けします</p>
+        <div v-for="singleData in data" :key="singleData.id" class="blogCard">                            
+            <div class="textsContainer">
+                <h3>{{ singleData.title }}</h3>
+                <p>{{ singleData.excerpt }}</p>
+                <p>{{ singleData.date }}</p>
+                <NuxtLink :to="singleData._path" class="linkButton">Read More</NuxtLink> 
             </div>
-            <div class="skills">
-                <h2>Skills</h2>
-                <div class="skillsContainer">
-                    <div><img src="~/assets/images/javascript.svg" alt="javascript"><span>JavaScript / 10 years</span></div>
-                    <div><img src="~/assets/images/react.svg" alt="react"><span>React / 4 years</span></div>
-                    <div><img src="~/assets/images/vue.svg" alt="vue"><span>Vue / 4 years</span></div>
-                    <div><img src="~/assets/images/nuxt.svg" alt="nuxt"><span>Nuxt / 3 years</span></div>
-                </div>
-            </div>
-            <div class="ctaButton">
-                <NuxtLink to="/contact">Make It Happen!</NuxtLink>
-            </div>
+            <div class="blogImg">
+                <img :src="singleData.image" alt="blog-image">
+            </div>  
+        </div>
         </div>
     </div>
 </template>
+
+<script setup>
+const { data } = await useAsyncData("blogQuery", () => 
+    queryContent("/blog").sort({ id: -1 }).find()
+)
+</script>
