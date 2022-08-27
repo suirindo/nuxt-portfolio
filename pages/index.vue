@@ -30,3 +30,12 @@
         </div>
     </div>
 </template>
+
+<script setup>
+useHead({
+    title: "Tomohiro Iida Official Site",
+    meta: [
+        { name: "description", content: "Tomohiro Iidaのポートフォリオサイトです"}
+    ],
+})
+</script>
