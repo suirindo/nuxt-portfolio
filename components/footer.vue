@@ -8,7 +8,7 @@
             <hr/>
             <NuxtLink to="/blog">Blog</NuxtLink>
             <NuxtLink to="/contact">Contact</NuxtLink>
-            <p>©{{ new Date().getFullYear() }} Abe Hiroki</p>
+            <p>©{{ new Date().getFullYear() }} Tomohiro Iida</p>
         </div>
     </footer>
 </template>

@@ -20,8 +20,8 @@
 </template>
 
 <script setup>
-import { useRoute } from 'vue-router';
-import Pagination from '../../../components/pagination.vue';
+//import { useRoute } from 'vue-router';
+//import Pagination from '../../../components/pagination.vue';
 
 const blogsPerPage = 5
 const currentPage = useRoute().params.pagination

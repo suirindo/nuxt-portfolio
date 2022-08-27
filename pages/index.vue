@@ -3,7 +3,7 @@
         <div class="hero">
             <img src="~/assets/images/index-hero.jpg" alt="hero">
             <div class="textContainer">
-                <h1>I'm Abe Hiroki!</h1>
+                <h1>Tomohiro Iida</h1>
                 <h3>JavaScript Developer</h3>
             </div>
         </div>

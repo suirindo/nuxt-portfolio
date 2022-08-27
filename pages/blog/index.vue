@@ -20,12 +20,12 @@
 </template>
 
 <script setup>
-import Pagination from '../../components/pagination.vue';
+//import Pagination from '../../components/pagination.vue';
 const blogsPerPage = 5
 const { data } = await useAsyncData("blogQuery", () => 
     queryContent("/blog")
     .sort({ id: -1 })
-    .limit(blogPerPage)
+    .limit(blogsPerPage)
     .find()
 )
 const allBlogs = await queryContent("/blog").find()

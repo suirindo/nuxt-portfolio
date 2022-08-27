@@ -15,7 +15,7 @@
 </template>
 
 <script setup>
-import PrevNext from '../../components/prevNext.vue';
+//import PrevNext from '../../components/prevNext.vue';
 const { data } = await useAsyncData(useRoute().path, () => 
     queryContent(useRoute().path).findOne()
 )
