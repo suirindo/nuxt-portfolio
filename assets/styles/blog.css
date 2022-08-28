@@ -2,7 +2,7 @@
     padding: 7rem 0 10rem;     
 }
 
-.blogCard {
+.jobOfferCard {
     display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: center;
@@ -28,11 +28,11 @@
     opacity: 0.8;
 }
 
-.blogImg {
+.jobOfferImg {
     height: 300px;
 }
 
-.blogImg > img {
+.Img > img {
     min-height: 300px;
     width: 100%;
     object-fit: cover;
@@ -51,7 +51,7 @@
 
 /* Media Queries */
 @media(max-width: 540px) { 
-    .blogCard{
+    .jobOfferCard{
         grid-template-columns: 1fr;
     }
 
@@ -59,7 +59,7 @@
         padding: 2rem 2rem;
     }
     
-    .blogImg { 
+    .jobOfferImg { 
         order: -1;
     }
 }
